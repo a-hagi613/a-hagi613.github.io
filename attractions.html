@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <title>Taniti Attractions Page</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100 text-black">
+    <div class="container flex-grow-1">
+      <nav>
+        <div class="d-flex p-3">
+          <div class="d-flex justify-content-start">
+            <h1 class="pe-2">Welcome to Taniti Island</h1>
+            <img
+              src="flag.png"
+              alt="flag of Taniti"
+              height="75%"
+              width="100px"
+              id="header-img"
+            />
+          </div>
+
+          <div class="ms-auto">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  ><button type="button" class="btn btn-success">Home</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/attractions.html"
+                  ><button type="button" class="btn btn-success">
+                    Attractions
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/bookings.html"
+                  ><button type="button" class="btn btn-success">
+                    Bookings
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/contact.html"
+                  ><button type="button" class="btn btn-success">
+                    Contact
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--  -->
+      <h3 class="display-6 fw-bold lh-1 mb-3 text-black text-center my-4 mb-4">
+        View some of our most famous attractions!
+      </h3>
+      <div
+        id="carouselMaterialStyle"
+        class="carousel slide carousel-fade mb-5 mt-5"
+        data-mdb-ride="carousel"
+        data-mdb-carousel-init
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselMaterialStyle"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselMaterialStyle"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselMaterialStyle"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselMaterialStyle"
+            data-mdb-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+
+        <div class="carousel-inner rounded-5 shadow-4-strong">
+          <div class="carousel-item active">
+            <img
+              src="/volcano.jpg"
+              class="d-block"
+              height="583px"
+              width="1320px"
+              alt="volcano"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explore the Tatini Volcano at Mount Taniti</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <div class="d-grid gap-2 w-100">
+                <a
+                  href="/bookings.html"
+                  class="text-white text-decoration-none w-100"
+                >
+                  <button
+                    class="btn btn-success w-100 btn-lg btn-block"
+                    type="button"
+                  >
+                    Book now!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/rainforest.jpg"
+              class="d-block w-100"
+              height="583px"
+              width="1320px"
+              alt="Canyon at Nigh"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explore the Tatini Rainforest</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-grid gap-2 w-100">
+                <a
+                  href="/bookings.html"
+                  class="text-white text-decoration-none w-100"
+                >
+                  <button
+                    class="btn btn-success w-100 btn-lg btn-block"
+                    type="button"
+                  >
+                    Book now!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/dancing.jpg"
+              class="d-block w-100"
+              height="583px"
+              width="1320px"
+              alt="Cliff Above a Stormy Sea"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explore our Dancing Club</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+              <div class="d-grid gap-2 w-100">
+                <a
+                  href="/bookings.html"
+                  class="text-white text-decoration-none w-100"
+                >
+                  <button
+                    class="btn btn-success w-100 btn-lg btn-block"
+                    type="button"
+                  >
+                    Book now!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+              <div class="carousel-item">
+            <img
+              src="/food.jpg"
+              class="d-block w-100"
+              height="583px"
+              width="1320px"
+              alt="Cliff Above a Stormy Sea"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explore our Restaurants </h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+              <div class="d-grid gap-2 w-100">
+                <a
+                  href="/bookings.html"
+                  class="text-white text-decoration-none w-100"
+                >
+                  <button
+                    class="btn btn-success w-100 btn-lg btn-block"
+                    type="button"
+                  >
+                    Book now!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-mdb-target="#carouselMaterialStyle"
+          data-mdb-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-mdb-target="#carouselMaterialStyle"
+          data-mdb-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    </div>
+<<<<<<< HEAD
+<footer class="bg-black text-center text-white text-lg-start mt-6">
+=======
+    <footer class="bg-black text-center text-white text-lg-start mt-auto">
+>>>>>>> 9cefba46b31165c3a65cd1627b6ef0bc7ec3354c
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright
+        <a class="text-white text-decoration-none" href="/index.html"
+          >Tatini Island</a
+        >
+<<<<<<< HEAD
+        <br>
+        <a class="text-white text-decoration-none" href="/sources.html"
+          >Citations</a
+        >
+=======
+>>>>>>> 9cefba46b31165c3a65cd1627b6ef0bc7ec3354c
+      </div>
+    </footer>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.umd.min.js"
+    ></script>
+  </body>
+</html>
